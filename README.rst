@@ -1,10 +1,30 @@
 =====
-pyess
+pyess-docker
 =====
 
-------------------------------------------------------------------------------
-Python library for LG ESS Solar power converters with EnerVU app compatibility
-------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Docker for LG ESS Solar power converter python library pyess
+--------------------------------------------------------------------------------
+
+This is a basic docker container for [pyess](https://github.com/gluap/pyess)
+
+Usage:
+
+- Set your credentials for your ESS and MQTT server in the essmqtt.conf file. (Without <>)
+
+- Modify the Makefile to include your docker repository to push the image to. (Without <>)
+
+ * Optional:
+    Modify the interval_seconds or the hass_autoconfig_sensors in essmqtt.conf to your preference. 
+
+- To build the docker image run:: 
+
+    make docker
+
+- To tag and push the image to your configured repository run::
+
+    make push
+
 
 
 Python library for communication with LG ESS power converter / energy storage devices for photovoltaic solar generators
