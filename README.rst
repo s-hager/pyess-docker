@@ -17,11 +17,11 @@ Usage:
  * Optional:
     Modify the interval_seconds or the hass_autoconfig_sensors in essmqtt.conf to your preference. 
 
-- To build the docker image run:: 
+- To only build the docker image run:: 
 
     make docker
 
-- To tag and push the image to your configured repository run::
+- To build the docker image, tag and push it to your configured repository run::
 
     make push
 
