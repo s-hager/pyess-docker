@@ -8,6 +8,8 @@ Docker for LG ESS Solar power converter python library pyess
 
 This is a basic docker container for `pyess <https://github.com/gluap/pyess>`_
 
+It is intended to send data to a MQTT server to be used by Home Assistant.
+
 Usage:
 
 - Set your credentials for your ESS and MQTT server in the essmqtt.conf file. (Without <>)
