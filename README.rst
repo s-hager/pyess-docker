@@ -6,7 +6,7 @@ pyess-docker
 Docker for LG ESS Solar power converter python library pyess
 --------------------------------------------------------------------------------
 
-This is a basic docker container for [pyess](https://github.com/gluap/pyess)
+This is a basic docker container for `pyess <https://github.com/gluap/pyess>`_
 
 Usage:
 
