@@ -1,9 +1,9 @@
-REPO_URL := 10.15.16.100:5000
+REPO_URL := <your_docker_repository>
 IMAGE_NAME := pyess
 IMAGE_TAG := latest
 
 docker:
-	docker image build -t $(IMAGE_NAME) . --progress=plain
+	docker image build -t $(IMAGE_NAME) .
 
 push: docker
 	docker image tag $(IMAGE_NAME) $(REPO_URL)/$(IMAGE_NAME):$(IMAGE_TAG)

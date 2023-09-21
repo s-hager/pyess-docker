@@ -25,6 +25,8 @@ Usage:
 
     make push
 
+- Make sure to set the environment variables ``ESS_PASSWORD``, ``MQTT_SERVER``, ``MQTT_USER``, ``MQTT_PASSWORD`` accordingly in your docker environment.
+    These will be automatically placed in the essmqtt.conf file inside the container on startup.
 
 
 Python library for communication with LG ESS power converter / energy storage devices for photovoltaic solar generators
