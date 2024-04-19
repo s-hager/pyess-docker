@@ -1,10 +1,11 @@
-=====
-pyess-docker
-=====
 
---------------------------------------------------------------------------------
+pyess-docker
+============
+
+
+
 Docker for LG ESS Solar power converter python library pyess
---------------------------------------------------------------------------------
+
 
 This is a basic docker container for `pyess <https://github.com/gluap/pyess>`_
 
@@ -30,11 +31,11 @@ Usage:
 - Make sure to set the environment variables ``ESS_PASSWORD``, ``MQTT_SERVER``, ``MQTT_USER``, ``MQTT_PASSWORD`` accordingly in your docker environment.
   These will be automatically placed in the essmqtt.conf file inside the container on startup.
 
-=====
+
 
 Original README:
 
-=====
+
 
 Python library for communication with LG ESS power converter / energy storage devices for photovoltaic solar generators
 
