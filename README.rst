@@ -12,6 +12,16 @@ This is a basic docker container for `pyess <https://github.com/gluap/pyess>`_
 It is intended to send data to a MQTT server to be used by Home Assistant.
 
 Usage:
+- Make sure to have these add these volumes to the container when creating it:
+    
+    ```
+    volumes = [
+        # This makes it possible to resolve local domain names via mDNS from inside a container.
+        # https://medium.com/@andrejtaneski/using-mdns-from-a-docker-container-b516a408a66b
+        "/var/run/dbus:/var/run/dbus"
+        "/var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket"
+    ];
+    ```
 
 - Set your credentials for your ESS and MQTT server in the essmqtt.conf file. (Without <>)
 
